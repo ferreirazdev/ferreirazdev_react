@@ -205,8 +205,8 @@ const ArrowUp = styled.div`
   margin-top: 2rem;
   @media (max-width: 650px) {
     position: absolute;
-    right: 3rem;
-    top: 16rem;
+    right: 0rem;
+    bottom: 1rem;
   }
 `;
 const Form = styled.div`
