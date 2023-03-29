@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { Slide } from "react-awesome-reveal";
+import { Slide, Fade } from "react-awesome-reveal";
 import ProfileIMG from "../../assets/profile.jpg"
 
 export function Resume() {
@@ -45,14 +45,14 @@ export function Resume() {
                   </Social>
               </Texts>
             </Slide>
-            <Slide direction="right">
+            <Fade>
               <Profile>
                   <img
                       src={ProfileIMG}
                       alt="profile"
                   />
               </Profile>
-            </Slide>
+            </Fade>
         </Container>
     )
 }

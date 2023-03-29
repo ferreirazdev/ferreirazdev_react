@@ -5,7 +5,7 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { FiMail } from "react-icons/fi";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import { Zoom, Fade } from "react-awesome-reveal";
 
 export function Contact() {
   const scrollUp = () => {
@@ -17,27 +17,27 @@ export function Contact() {
   return (
     <Container id="footer">
       <Profile>
-        <Slide direction="left" delay={1}>
+        <div>
           <h1>Contato</h1>
-        </Slide>
+        </div>
         <div className="links">
           <div className="buttonRedirect">
             <span>
               <IoLogoWhatsapp />
             </span>
-            <Slide direction="left">
+            <div>
               <a href="tel:+4733378901">Enviar uma mensagem</a>
-            </Slide>
+            </div>
           </div>
           <div className="buttonRedirect">
-            <Slide direction="left">
+            <div>
               <span>
                 <HiOutlineMailOpen />
               </span>
-            </Slide>
-            <Slide>
+            </div>
+            <div>
               <a href="mailto:miladamiri@gmail.com">ferreirazdev@gmail.com</a>
-            </Slide>
+            </div>
           </div>
         </div>
         <div className="profiles">
@@ -65,7 +65,7 @@ export function Contact() {
         </Fade>
       </Profile>
       <Form>
-        <Slide direction="right">
+        <div>
           <form>
             <div className="name">
               <span>
@@ -87,7 +87,7 @@ export function Contact() {
             </div>
             <button>Submit</button>
           </form>
-        </Slide>
+        </div>
       </Form>
     </Container>
   );

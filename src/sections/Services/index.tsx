@@ -8,38 +8,38 @@ import Card from "../../components/Card";
 export function Services() {
     return (
         <Container id="service">
-            <Slide direction="down">
+            <div>
                 <h4>
                 meus <span className="green">serviços</span>
                 </h4>
                 <h1>Como posso te ajudar?</h1>
-            </Slide>
+            </div>
             <Cards>
-                <Slide direction="left">
-                <Card
-                    Icon={AiFillLayout}
-                    title={"Landing Pages"}
-                    disc={`Sites institucionais (como este que você está agora) 
-                        sobre serviços empresariais/pessoais que deseja apresentar
-                        ao mundo.`}
-                />
+                <Slide>
+                  <Card
+                      Icon={AiFillLayout}
+                      title={"Landing Pages"}
+                      disc={`Sites institucionais (como este que você está agora) 
+                          sobre serviços empresariais/pessoais que deseja apresentar
+                          ao mundo.`}
+                  />
                 </Slide>
-                <Slide direction="up">
-                <Card
-                    Icon={FiCodesandbox}
-                    title={"Web Applications"}
-                    disc={`Sistemas web complexos com implementação de regras particulares 
-                        ao seu negócio/projeto, junto a processamento e armazenamento de dados.
-                        Ex: Lojas Virtuais, Redes Sociais...`}
-                />
+                <Slide>
+                  <Card
+                      Icon={FiCodesandbox}
+                      title={"Web Applications"}
+                      disc={`Sistemas web complexos com implementação de regras particulares 
+                          ao seu negócio/projeto, junto a processamento e armazenamento de dados.
+                          Ex: Lojas Virtuais, Redes Sociais...`}
+                  />
                 </Slide>
-                <Slide direction="right">
-                <Card
-                    Icon={AiFillHdd}
-                    title={"Services"}
-                    disc={`Serviços isolados, mais voltados ao backend, que envolvem processamentos de dados.
-                            Ex: Microservices, Web Services, CLI App, Chatbot, Web Scraper...`}
-                />
+                <Slide>
+                  <Card
+                      Icon={AiFillHdd}
+                      title={"Services"}
+                      disc={`Serviços isolados, mais voltados ao backend, que envolvem processamentos de dados.
+                              Ex: Microservices, Web Services, CLI App, Chatbot, Web Scraper...`}
+                  />
                 </Slide>
             </Cards>
         </Container>
