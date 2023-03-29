@@ -58,7 +58,7 @@ const Container = styled.div<Props>`
                 position: absolute;
                 width: 100%;
                 height: 2px;
-                background-color: ${props => props.bar ? "transparent" : "#000"};
+                background-color: ${props => props.bar ? "transparent" : "#01be96"};
                 transition: all 400ms ease-in-out;
                 :before, :after{
                     content: "";
@@ -136,6 +136,9 @@ const Nav = styled.div<Props>`
             }
             :hover{
                 opacity: 0.7;
+            }
+            @media(max-width:640px){{
+                color: #fff;
             }
         }
     }

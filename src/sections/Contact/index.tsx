@@ -108,6 +108,7 @@ const Container = styled.div`
 
   @media (max-width: 650px) {
     flex-direction: column;
+    align-items: center;
     gap: 3rem;
   }
 `;
@@ -147,10 +148,18 @@ const Profile = styled.div`
       :hover {
         filter: drop-shadow(0px 10px 10px #01be9570);
       }
+      @media (max-width: 650px) {
+        width: 100%
+      }
     }
   }
 
   .profiles {
+    @media (max-width: 650px) {
+      display: flex;
+      align items: center;
+      justify-content: center;
+    }
     margin-top: 1rem;
     h1 {
       font-size: 0.5rem;

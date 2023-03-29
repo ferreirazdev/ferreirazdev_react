@@ -71,6 +71,8 @@ const Container = styled.div`
   }
   @media (max-width: 640px) {
     flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
   }
 `;
 const Texts = styled.div`

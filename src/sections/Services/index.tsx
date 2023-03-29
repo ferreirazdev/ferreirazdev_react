@@ -54,7 +54,7 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 3rem 6rem;
   @media (max-width: 840px) {
-    width: 90%;
+    width: 100%;
   }
   h1 {
     padding-top: 1rem;
