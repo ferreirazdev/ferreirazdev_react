@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styled from 'styled-components';
 import { BiExpandHorizontal } from "react-icons/bi";
+import LogoPNG from "../../assets/logo.png"
 
 interface Props {
     bar: boolean;
@@ -11,7 +12,11 @@ export function Navbar() {
     return (
     <Container bar={bar}>
         <Logo>
-            <span className='green'><BiExpandHorizontal/></span>
+            <img
+                src={LogoPNG}
+                alt="profile"
+                width={70}
+            />
         </Logo>
         <Nav bar={bar}>
             <span><a href="#home">INICIO</a></span>
@@ -117,7 +122,7 @@ const Nav = styled.div<Props>`
             position: relative;
             font-weight: 600;
             font-size: 0.9rem;
-            color: #000;
+            color: #fff;
             :before{
                 content: "";
                 position: absolute;

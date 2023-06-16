@@ -15,8 +15,9 @@ export function Home() {
 }
 
 const Banner = styled.div`
-  height: 100vh;
-  margin-bottom: -100px;
+  height: 80vh;
+  padding: 0 250px;
+  width: 100%;
   @media (max-width: 640px) {
     height: 100%;
     padding-bottom: 5rem;

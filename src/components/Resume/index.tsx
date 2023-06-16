@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { Slide, Fade } from "react-awesome-reveal";
-import ProfileIMG from "../../assets/profile.jpg"
+import ProfileIMG from "../../assets/laptop.png"
 
 export function Resume() {
     return (
@@ -10,26 +10,13 @@ export function Resume() {
             <Slide direction="left">
               <Texts>
                   <div className="title">
-                    <h1>Flávio Ferreira</h1> 
-                    <h4>(ferreirazdev)</h4>
+                    <h1>Desenvolvimento <br/> web sob medida</h1> 
                   </div>
-                  <h3>Desenvolvedor Full Stack</h3>
-                  <div className="description">
-                    <p>
-                        Atuando no mercado há mais de 2 anos, desenvolvendo projetos de alta escalabilidade, 
-                        que impactam de milhões de usuários por ano. 
-                    </p>
-                    <p>
-                        Utilizando sempre as melhores tecnologias e arquiteturas
-                        do mercado para atingir os melhores resultados.
-                    </p>
-                    <p className="stack">
-                        Stack: Golang, Django, React, AWS, Google Cloud, Docker, Kubernetes
-                    </p>
-                  </div>
+                  <h4>Criamos sistemas e web sites que <br /> 
+                  transformam o seu negócio através <br /> da tecnologia.</h4>
                   
-                  <button>Fale Comigo! <IoLogoWhatsapp /> </button>
-                  <Social>
+                  <button>PEÇA UM ORÇAMENTO </button>
+                  {/* <Social>
                       <div className="social-icons">
                           <span>
                             <a href="https://github.com/ferreirazdev">
@@ -42,7 +29,7 @@ export function Resume() {
                             </a>
                           </span>
                       </div>
-                  </Social>
+                  </Social> */}
               </Texts>
             </Slide>
             <Fade>
@@ -86,17 +73,15 @@ const Texts = styled.div`
     font-size: 2rem;
     font-family: 'Secular One', sans-serif;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 700;
+    color: #fff;
   }
   h4 {
-    font-weight: 500;
-  }
-  h3 {
-    font-weight: 700;
+    font-weight: 300;
+    color: #fff;
     font-size: 1.2rem;
     padding-top: 1.2rem;
     padding-bottom: 0.5rem;
-    text-transform: capitalize;
   }
   .description {
     margin-top: 0.5rem;
@@ -117,13 +102,15 @@ const Texts = styled.div`
     padding: 0.7rem 2rem;
     margin-top: 3rem;
     cursor: pointer;
-    background-color: #01be96;
+    background-color: #9341E1;
+    border-radius: 5px;
     border: none;
+    font-size: 15px;
     color: #fff;
-    font-weight: 500;
-    filter: drop-shadow(0px 10px 10px #01be9551);
+    font-weight: 700;
+    // filter: drop-shadow(0px 10px 10px #9341E1);
     :hover {
-      filter: drop-shadow(0px 10px 10px #01be9570);
+      filter: drop-shadow(2px 2px 2px #9341E1);
     }
   }
 `;
@@ -146,7 +133,7 @@ const Social = styled.div`
       width: 2.3rem;
       height: 2rem;
       clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-      background-color: #01be96;
+      background-color: #9341E1;
       position: relative;
       transition: transform 400ms ease-in-out;
       :hover {
@@ -164,10 +151,10 @@ const Social = styled.div`
 `;
 const Profile = styled.div`
   img {
-    width: 25rem;
-    filter: drop-shadow(0px 10px 10px #01be9570);
+    width: 35rem;
+    // filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
-    border-radius: 50%;
+    // border-radius: 50%;
     @media (max-width: 790px) {
       width: 20rem;
     }
