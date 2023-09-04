@@ -48,6 +48,7 @@ const Container = styled.div<Props>`
     }
     .bars{
         display: none;
+        background-color: "transparent";
     }
     @media(max-width:640px){
         .bars{
@@ -63,7 +64,7 @@ const Container = styled.div<Props>`
                 position: absolute;
                 width: 100%;
                 height: 2px;
-                background-color: ${props => props.bar ? "transparent" : "#01be96"};
+                background-color: ${props => props.bar ? "transparent" : "#9341E1"};
                 transition: all 400ms ease-in-out;
                 :before, :after{
                     content: "";
@@ -103,7 +104,7 @@ const Nav = styled.div<Props>`
         position: fixed;
         display: flex;
         flex-direction: column;
-        background-color: #01be96;
+        background-color: #9341E1;
         inset: 0;
         justify-content: center;
         align-items: center;
@@ -116,6 +117,7 @@ const Nav = styled.div<Props>`
         z-index: 100;
     }
     span{
+        background-color: #9341E1;
         margin-left: 1rem;
         a{
             text-decoration: none;
@@ -144,6 +146,7 @@ const Nav = styled.div<Props>`
             }
             @media(max-width:640px){{
                 color: #fff;
+                background-color: #9341E1;
             }
         }
     }

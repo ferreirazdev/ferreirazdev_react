@@ -19,7 +19,8 @@ const Banner = styled.div`
   padding: 0 250px;
   width: 100%;
   @media (max-width: 640px) {
-    height: 100%;
+    height: 100vh;
+    padding: 0;
     padding-bottom: 5rem;
   }
 `;

@@ -60,6 +60,8 @@ const Container = styled.div`
     flex-direction: column;
     padding-top: 2rem;
     padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
   }
 `;
 const Texts = styled.div`
@@ -111,6 +113,12 @@ const Texts = styled.div`
     // filter: drop-shadow(0px 10px 10px #9341E1);
     :hover {
       filter: drop-shadow(2px 2px 2px #9341E1);
+    }
+  }
+  @media (max-width: 640px) {
+    .title {
+      align-items: center;
+
     }
   }
 `;
